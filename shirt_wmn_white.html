@@ -10,17 +10,10 @@
     />
     <link rel="icon" href="./assets/Chickpeas Logo.png" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="script.js"></script>
     <title>T-Shirt Wmn White</title>
   </head>
   <body>
-    <navbar class="navbar">
-      <button onclick="location.href='index.html'">HOME</button>
-      <button onclick="location.href='sale.html'">SALE</button>
-      <button onclick="location.href='womens.html'">WOMEN</button>
-      <button onclick="location.href='mens.html'">MENS</button>
-      <button onclick="location.href='about.html'">ABOUT</button>
-    </navbar>
+    <navbar class="navbar" id="navbar"></navbar>
 
     <div class="cart-wrapper">
       <div class="card-hidden" id="card-preview">
@@ -33,10 +26,14 @@
 
     <section class="product-layout-page" id="product-layout-page"></section>
 
+    <script src="script.js"></script>
+    <script src="static.js"></script>
+
     <script>
       fillProductPage("03");
       basketNot();
       updateBasket();
+      navbar();
     </script>
   </body>
 </html>
