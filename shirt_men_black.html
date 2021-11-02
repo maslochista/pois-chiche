@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/Chickpeas Logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <title>T-Shirt Men Black</title>
+  </head>
+  <body>
+    <navbar class="navbar">
+      <button onclick="location.href='index.html'">HOME</button>
+      <button onclick="location.href='sale.html'">SALE</button>
+      <button onclick="location.href='womens.html'">WOMEN</button>
+      <button onclick="location.href='mens.html'">MENS</button>
+      <button onclick="location.href='about.html'">ABOUT</button>
+    </navbar>
+
+    <div class="cart-wrapper">
+      <div class="card-hidden" id="card-preview">
+        <button id="checkout-open">CHECKOUT</button>
+      </div>
+      <button class="cart-style" id="shopping-cart" onclick="handleCart()">
+        <span class="material-icons"> shopping_cart </span>
+      </button>
+    </div>
+
+    <section class="product-layout-page" id="product-layout-page"></section>
+
+    <script>
+      fillProductPage("02");
+      basketNot();
+      updateBasket();
+    </script>
+  </body>
+</html>

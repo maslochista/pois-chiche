@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Chickpeas Logo.png" />
+    <title>Pois-Chiche</title>
+    <script src="script.js"></script>
+    <script src="basket.js"></script>
+  </head>
+  <body>
+    <navbar class="navbar">
+      <button>HOME</button>
+      <button onclick="location.href='sale.html'">SALE</button>
+      <button onclick="location.href='womens.html'">WOMEN</button>
+      <button onclick="location.href='mens.html'">MENS</button>
+      <button onclick="location.href='about.html'">ABOUT</button>
+    </navbar>
+
+    <div class="cart-wrapper">
+      <div class="card-hidden" id="card-preview">
+        <button id="checkout-open" onclick="location.href='basket.html'">
+          CHECKOUT
+        </button>
+        <div>
+          <img class="miniature" src="POIS CHICHE T-SHIRT BLACK.png" />
+          <p>ITEM 1</p>
+          <p class="price-mini">19.99</p>
+          <span class="material-icons"> delete </span>
+        </div>
+        <div>
+          <img class="miniature" src="POIS CHICHE T-SHIRT BLACK.png" />
+          <p>ITEM 2</p>
+          <p class="price-mini">19.99</p>
+          <span class="material-icons"> delete </span>
+        </div>
+        <div>
+          <img class="miniature" src="POIS CHICHE T-SHIRT BLACK.png" />
+          <p>ITEM 3</p>
+          <p class="price-mini">19.99</p>
+          <span class="material-icons"> delete </span>
+        </div>
+        <div>
+          <img class="miniature" src="POIS CHICHE T-SHIRT BLACK.png" />
+          <p>ITEM 3</p>
+          <p class="price-mini">19.99</p>
+          <span class="material-icons"> delete </span>
+        </div>
+      </div>
+      <button class="cart-style" id="shopping-cart" onclick="handleCart()">
+        <span class="material-icons"> shopping_cart </span>
+      </button>
+    </div>
+
+    <section class="first-page-wrapper">
+      <div class="center-logo">
+        <img src="assets/PS_logo.png" id="logo-center" />
+      </div>
+
+      <div class="first-page-welcome">
+        <img src="./assets/crewneck_white.png" id="first-crewneck" />
+      </div>
+
+      <!-- <div class="scroll-sign black-shadow">
+            <h1>CLICK TO SEE MORE</h1>
+            <div class="sale-sign">
+                UP TO -50%
+            </div>
+        </div> -->
+    </section>
+
+    <section id="scroll-items">
+      <div class="scroll-wrap" id="scroll-wrap"></div>
+    </section>
+
+    <section id="new-collection">
+      <div class="collection-wrapper">
+        <div class="z-index-high black-box">
+          <h1>NEW "DAILY" COLLECTION</h1>
+          <div class="boxes-new-arrival">
+            <button onclick="location.href='mens.html'">CHECK MEN'S</button>
+            <button onclick="location.href='womens.html'">CHECK WOMEN'S</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div></div>
+    </footer>
+
+    <script>
+      listItems();
+      basketNot();
+      updateBasket();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Chickpeas Logo.png" />
+    <script src="script.js"></script>
+    <title>Basket</title>
+  </head>
+  <body class="center-stuff">
+    <div class="logo-top-right">
+      <img src="assets/PS_logo.png" />
+    </div>
+
+    <section class="basket-wrapper">
+      <div class="form">
+        <form>
+          <div class="grid">
+            <input type="text" />
+            <input type="text" />
+            <label for="fname">First name</label>
+            <label for="fname">Last name</label><br />
+          </div>
+
+          <div class="grid">
+            <input type="text" />
+            <input type="text" />
+            <label for="fname">Adress Line One</label>
+            <label for="fname">Adress Line Two</label><br />
+          </div>
+
+          <div class="grid">
+            <input type="text" />
+            <input type="text" />
+            <label for="fname">City</label>
+            <label for="fname">Post Code</label><br />
+          </div>
+
+          <div class="payment-select">
+            <div>
+              <label for="MasterCard"
+                >MasterCard
+                <input
+                  type="radio"
+                  id="MasterCard"
+                  name="payment"
+                  value="MasterCard"
+                />
+                <span class="radio"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="Visa"
+                >Visa
+                <input type="radio" id="Visa" name="payment" value="Visa" />
+                <span class="radio"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="PayPal"
+                >PayPal
+                <input type="radio" id="PayPal" name="payment" value="PayPal" />
+                <span class="radio"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="Cash"
+                >Cash
+                <input type="radio" id="Cash" name="payment" value="Cash" />
+                <span class="radio"></span> </label
+              ><br />
+            </div>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Go to Payment" />
+          </div>
+        </form>
+      </div>
+
+      <div class="summary-products">
+        <h1>Here's the summary of your order:</h1>
+
+        <div class="cart-summary" id="card-preview">
+        </div>
+
+        <div class="price-sum">
+          <h3>Total: $29.99</h3>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      addItems();
+      updateBasket("checkout");
+    </script>
+  </body>
+</html>
